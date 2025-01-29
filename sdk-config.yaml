@@ -1,0 +1,23 @@
+ModuleName: Wordpress
+ApiNamespace: lander2k2.com
+ApiDocs:
+  Title: WordPress Threeport API
+  Description: API server for the Threeport WordPress module.
+  ContactName: Richard Lander
+  ContactEmail: lander2k2@protonmail.com
+ImageRepo: richlander2k2
+ApiObjectGroups:
+- Name: wordpress
+  Objects:
+    - Name: WordpressDefinition
+      Versions:
+        - v0
+      Reconcilable: true
+      Tptctl:
+        Enabled: true
+    - Name: WordpressInstance
+      Versions:
+        - v0
+      Reconcilable: true
+      Tptctl:
+        Enabled: true
